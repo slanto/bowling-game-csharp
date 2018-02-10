@@ -1,0 +1,8 @@
+/home/slawek/Documents/Git/bowling-game-csharp/BowlingGame/BowlingGame/bin/Debug/netstandard2.0/BowlingGame.deps.json
+/home/slawek/Documents/Git/bowling-game-csharp/BowlingGame/BowlingGame/bin/Debug/netstandard2.0/BowlingGame.dll
+/home/slawek/Documents/Git/bowling-game-csharp/BowlingGame/BowlingGame/bin/Debug/netstandard2.0/BowlingGame.pdb
+/home/slawek/Documents/Git/bowling-game-csharp/BowlingGame/BowlingGame/obj/Debug/netstandard2.0/BowlingGame.csproj.CoreCompileInputs.cache
+/home/slawek/Documents/Git/bowling-game-csharp/BowlingGame/BowlingGame/obj/Debug/netstandard2.0/BowlingGame.AssemblyInfoInputs.cache
+/home/slawek/Documents/Git/bowling-game-csharp/BowlingGame/BowlingGame/obj/Debug/netstandard2.0/BowlingGame.AssemblyInfo.cs
+/home/slawek/Documents/Git/bowling-game-csharp/BowlingGame/BowlingGame/obj/Debug/netstandard2.0/BowlingGame.dll
+/home/slawek/Documents/Git/bowling-game-csharp/BowlingGame/BowlingGame/obj/Debug/netstandard2.0/BowlingGame.pdb

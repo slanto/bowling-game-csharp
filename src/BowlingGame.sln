@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame", "BowlingGame\BowlingGame.csproj", "{6E4AA61C-A6B7-47E8-9850-74F0F4244DF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame.Test", "..\test\BowlingGame.Test\BowlingGame.Test.csproj", "{C9EE617F-CF84-4D43-A31C-7ED1CCF133E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E4AA61C-A6B7-47E8-9850-74F0F4244DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E4AA61C-A6B7-47E8-9850-74F0F4244DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E4AA61C-A6B7-47E8-9850-74F0F4244DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E4AA61C-A6B7-47E8-9850-74F0F4244DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9EE617F-CF84-4D43-A31C-7ED1CCF133E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9EE617F-CF84-4D43-A31C-7ED1CCF133E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9EE617F-CF84-4D43-A31C-7ED1CCF133E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9EE617F-CF84-4D43-A31C-7ED1CCF133E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
