@@ -10,6 +10,6 @@
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\BowlingGame\BowlingGame\BowlingGame.csproj" />
+    <ProjectReference Include="..\..\src\BowlingGame\BowlingGame.csproj" />
   </ItemGroup>
 </Project>
