@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using FluentAssertions;
 using Xunit;
 
@@ -11,11 +12,8 @@ namespace BowlingGame.Test
         {
             var game = new Game();
 
-            for (var i = 0; i < 20; i++)
-            {
-                game.Roll(0);
-            }
-
+            RollMany(game, 20, 0);
+                      
             game.Score().Should().Be(0, "global score for all frames without knocked down pins is 0");
         }
         
@@ -24,12 +22,17 @@ namespace BowlingGame.Test
         {
             var game = new Game();
 
-            for (var i = 0; i < 20; i++)
-            {
-                game.Roll(1);
-            }
+            RollMany(game, 20, 1);
 
             game.Score().Should().Be(20, "global score for all tries with one knocked down pins is 20");
+        }
+
+        private static void RollMany(Game game, int rolls, int pins)
+        {
+            for (var i = 0; i < rolls; i++)
+            {
+                game.Roll(pins);
+            }
         }
     }
 }
