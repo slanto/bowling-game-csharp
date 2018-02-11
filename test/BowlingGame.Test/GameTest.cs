@@ -1,5 +1,6 @@
 using System;
 using System.Reflection;
+using System.Resources;
 using FluentAssertions;
 using Xunit;
 
@@ -18,7 +19,7 @@ namespace BowlingGame.Test
         }
         
         [Fact]
-        public void GivenOneKnockedDownPinInTry_WhenScoreIsCalled_ThenTwentyIsReturned()
+        public void GivenOneKnockedDownPinInEachTry_WhenScoreIsCalled_ThenTwentyIsReturned()
         {
             var game = new Game();
 
@@ -27,6 +28,19 @@ namespace BowlingGame.Test
             game.Score().Should().Be(20, "global score for all tries with one knocked down pins is 20");
         }
 
+        [Fact(Skip="It is not ready yet")]
+        public void GivenOneSpare_WhenScoreIsCalled_ThenSixteenIsReturned()
+        {
+            var game = new Game();
+
+            game.Roll(5);
+            game.Roll(5);
+            game.Roll(3);
+            RollMany(game, 17, 0);
+            
+            game.Score().Should().Be(16, "global score for one spare is 16");
+        }
+        
         private static void RollMany(Game game, int rolls, int pins)
         {
             for (var i = 0; i < rolls; i++)
