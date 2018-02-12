@@ -28,19 +28,24 @@ namespace BowlingGame.Test
             game.Score().Should().Be(20, "global score for all tries with one knocked down pins is 20");
         }
 
-        [Fact(Skip="It is not ready yet")]
+        [Fact]
         public void GivenOneSpare_WhenScoreIsCalled_ThenSixteenIsReturned()
         {
             var game = new Game();
 
-            game.Roll(5);
-            game.Roll(5);
+            RollSpare(game);
             game.Roll(3);
             RollMany(game, 17, 0);
             
             game.Score().Should().Be(16, "global score for one spare is 16");
         }
-        
+
+        private static void RollSpare(Game game)
+        {
+            game.Roll(5);
+            game.Roll(5);
+        }
+
         private static void RollMany(Game game, int rolls, int pins)
         {
             for (var i = 0; i < rolls; i++)

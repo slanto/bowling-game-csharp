@@ -19,11 +19,24 @@ namespace BowlingGame
 
             for (var frame = 0; frame < 10; frame++)
             {
-                score += _rolls[roll] + _rolls[roll + 1];
+                if (IsSpare(roll))
+                {
+                    score += 10 + _rolls[roll + 2];
+                }
+                else
+                {
+                    score += _rolls[roll] + _rolls[roll + 1];
+                }
+                
                 roll += 2;
             }
 
             return score;
-        }        
+        }
+
+        private bool IsSpare(int roll)
+        {
+            return _rolls[roll] + _rolls[roll + 1] == 10;
+        }
     }
 }
