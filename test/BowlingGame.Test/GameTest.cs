@@ -29,7 +29,7 @@ namespace BowlingGame.Test
         }
 
         [Fact]
-        public void GivenOneSpare_WhenScoreIsCalled_ThenSixteenIsReturned()
+        public void GivenOneSpare_WhenScoreIsCalled_ThenScoreIsReturned()
         {
             var game = new Game();
 
@@ -38,6 +38,24 @@ namespace BowlingGame.Test
             RollMany(game, 17, 0);
             
             game.Score().Should().Be(16, "global score for one spare is 16");
+        }
+
+        [Fact]
+        public void GivenOneStrike_WhenScoreIsCalled_ThenScoreIsReturned()
+        {
+            var game = new Game();
+
+            RollStrike(game);
+            game.Roll(3);
+            game.Roll(4);
+            RollMany(game, 16, 0);
+            
+            game.Score().Should().Be(24, "global score for one strike is 24");
+        }
+
+        private static void RollStrike(Game game)
+        {
+            game.Roll(10);
         }
 
         private static void RollSpare(Game game)
