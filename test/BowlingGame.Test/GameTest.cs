@@ -53,6 +53,24 @@ namespace BowlingGame.Test
             game.Score().Should().Be(24, "global score for one strike is 24");
         }
 
+        [Fact]
+        public void GivenAllStrikes_WhenScoreIsCalled_ThenPerfectScoreIsReturned()
+        {
+            var game = new Game();
+
+            RallStrikes(game, 12);
+                        
+            game.Score().Should().Be(300, "global score for perfect game is 300");
+        }
+
+        private static void RallStrikes(Game game, int strikes)
+        {
+            for (var i = 0; i < strikes; i++)
+            {
+                RollStrike(game);
+            }
+        }
+
         private static void RollStrike(Game game)
         {
             game.Roll(10);
